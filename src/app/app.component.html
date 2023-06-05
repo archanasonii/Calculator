@@ -1,0 +1,39 @@
+<div class="container"
+style="display: flex;
+align-items: center;
+height: 600px;
+ justify-content: center;">
+
+<div class="mycals">
+  <Input #box (keyup.enter)="calvalue(box)" [(ngModel)]="toshow" ngDefaultControl type="text">
+  <div class="all-btn">
+  <div class="all-btn-number">
+    <button (click)="writetoinput('1')">1</button>
+    <button (click)="writetoinput('2')">2</button>
+    <button (click)="writetoinput('3')">3</button>
+    <button (click)="writetoinput('4')">4</button>
+    <button (click)="writetoinput('5')">5</button>
+    <button (click)="writetoinput('6')">6</button>
+    <button (click)="writetoinput('7')">7</button>
+    <button (click)="writetoinput('8')">8</button>
+    <button (click)="writetoinput('9')">9</button>
+    <button (click)="writetoinput('0')">0</button>
+    <div class="btn-extra">
+      <button (click)="writetoinput('.')">.</button>
+      <button (click)="back()">back</button>
+    </div>
+  </div>
+
+    <div class="all-btn-sign">
+    <button (click)="writetoinput('+')">+</button>
+    <button (click)="writetoinput('-')">-</button>
+    <button (click)="writetoinput('*')">*</button>
+    <button (click)="writetoinput('/')">/</button>
+    </div>
+  </div>
+  <div class="btn-clear-equals">
+    <button class="clear"(click)="clear()">c</button>
+    <button class="equal" (click)="equal()">=</button>
+  </div>
+</div>
+</div>
